@@ -7,8 +7,6 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/Bukashk0zzz/booleantype-bundle.svg?style=flat-square)](https://packagist.org/packages/Bukashk0zzz/booleantype-bundle)
 [![Total Downloads](https://img.shields.io/packagist/dt/Bukashk0zzz/booleantype-bundle.svg?style=flat-square)](https://packagist.org/packages/Bukashk0zzz/booleantype-bundle)
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/98688324-1b62-4140-a717-15d2406a3761/small.png)](https://insight.sensiolabs.com/projects/98688324-1b62-4140-a717-15d2406a3761)
-[![knpbundles.com](http://knpbundles.com/Bukashk0zzz/BooleanTypeBundle/badge-short)](http://knpbundles.com/Bukashk0zzz/BooleanTypeBundle)
 
 About
 -----
