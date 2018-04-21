@@ -1,0 +1,12 @@
+parameters:
+    boolean.type.class: Bukashk0zzz\BooleanTypeBundle\Form\Type\BooleanType
+
+services:
+    _defaults:
+        public: true
+
+    boolean.type:
+        class: '%boolean.type.class%'
+        arguments: []
+        tags:
+            - { name: form.type, alias: boolean }

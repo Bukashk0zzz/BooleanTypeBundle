@@ -1,0 +1,38 @@
+{
+    "name": "bukashk0zzz/booleantype-bundle",
+    "description": "A simple Symfony bundle that adds boolean form field type.",
+    "keywords": ["bundle", "symfony", "bool", "boolean", "form", "type"],
+    "homepage": "https://github.com/bukashk0zzz/BooleanTypeBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denis Golubovskiy",
+            "email": "bukashk0zzz@gmail.com",
+            "role": "Creator"
+        }
+    ],
+    "support": {
+        "email": "bukashk0zzz@gmail.com",
+        "issues": "https://github.com/bukashk0zzz/BooleanTypeBundle/issues"
+    },
+    "require": {
+        "php": ">=7.1.0",
+        "symfony/dependency-injection": "^3.3|^4.0",
+        "symfony/config": "^3.3|^4.0",
+        "symfony/yaml": "^3.3|^4.0",
+        "symfony/http-kernel": "^3.3|^4.0",
+        "symfony/form": "^3.3|^4.0"
+    },
+    "require-dev": {
+        "escapestudios/symfony2-coding-standard": "^3.0",
+        "slevomat/coding-standard": "^4.0",
+        "friendsofphp/php-cs-fixer": "^2.8",
+        "phpunit/phpunit": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bukashk0zzz\\BooleanTypeBundle\\": ""
+        }
+    }
+}
