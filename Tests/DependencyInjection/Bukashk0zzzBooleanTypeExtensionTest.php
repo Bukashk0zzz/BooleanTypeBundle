@@ -8,7 +8,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
  * @internal
- * @coversNothing
  */
 final class Bukashk0zzzBooleanTypeExtensionTest extends TestCase
 {

@@ -8,7 +8,6 @@ use Symfony\Component\Form\Test\TypeTestCase;
 
 /**
  * @internal
- * @coversNothing
  */
 final class BooleanTypeTest extends TypeTestCase
 {
