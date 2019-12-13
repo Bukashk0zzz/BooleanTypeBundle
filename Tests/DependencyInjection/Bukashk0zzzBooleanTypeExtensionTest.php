@@ -1,14 +1,5 @@
 <?php declare(strict_types = 1);
 
-/*
- * This file is part of the Bukashk0zzzBooleanTypeBundle
- *
- * (c) Denis Golubovskiy <bukashk0zzz@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace Bukashk0zzz\BooleanTypeBundle\Tests\DependencyInjection;
 
 use Bukashk0zzz\BooleanTypeBundle\DependencyInjection\Bukashk0zzzBooleanTypeExtension;
@@ -16,9 +7,10 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * Bukashk0zzzBooleanTypeExtensionTest
+ * @internal
+ * @coversNothing
  */
-class Bukashk0zzzBooleanTypeExtensionTest extends TestCase
+final class Bukashk0zzzBooleanTypeExtensionTest extends TestCase
 {
     /**
      * @var Bukashk0zzzBooleanTypeExtension Bukashk0zzzBooleanTypeExtension
@@ -30,10 +22,7 @@ class Bukashk0zzzBooleanTypeExtensionTest extends TestCase
      */
     private $container;
 
-    /**
-     * {@inheritdoc}
-     */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->extension = new Bukashk0zzzBooleanTypeExtension();
         $this->container = new ContainerBuilder();
@@ -41,7 +30,7 @@ class Bukashk0zzzBooleanTypeExtensionTest extends TestCase
     }
 
     /**
-     * Test load extension
+     * Test load extension.
      */
     public function testLoadExtension(): void
     {
@@ -49,6 +38,6 @@ class Bukashk0zzzBooleanTypeExtensionTest extends TestCase
         $this->container->compile();
 
         // Check that services have been loaded
-        static::assertTrue($this->container->has('boolean.type'));
+        self::assertTrue($this->container->has('boolean.type'));
     }
 }

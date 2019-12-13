@@ -4,9 +4,6 @@ namespace Bukashk0zzz\BooleanTypeBundle\Form\DataTransformer;
 
 use Symfony\Component\Form\DataTransformerInterface;
 
-/**
- * Class BooleanTransformer
- */
 class BooleanTransformer implements DataTransformerInterface
 {
     public const FORM_TRUE = 1;
@@ -23,8 +20,6 @@ class BooleanTransformer implements DataTransformerInterface
 
     /**
      * @param mixed $value
-     *
-     * @return bool
      */
     public function reverseTransform($value): bool
     {

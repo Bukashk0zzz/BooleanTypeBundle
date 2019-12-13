@@ -1,18 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="Bukashk0zzz">
-    <description>Bukashk0zzz coding standard.</description>
-
-    <rule ref="./vendor/escapestudios/symfony2-coding-standard/Symfony"/>
-    <rule ref="./vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml" />
-
-    <rule ref="./vendor/escapestudios/symfony2-coding-standard/Symfony">
-        <exclude name="Symfony.Functions.Arguments.Invalid"/>
-        <exclude name="Symfony.Commenting.License.Warning"/>
-        <exclude name="Symfony.Commenting.Annotations.Invalid"/>
-        <exclude name="Symfony.ControlStructure.YodaConditions.Invalid"/>
-        <exclude name="Symfony.ControlStructure.UnaryOperators.Invalid"/>
-        <exclude name="Symfony.Functions.ReturnType.Invalid"/>
-    </rule>
+<ruleset name="Coding standard">
+    <description>Coding standard.</description>
 
     <rule ref="./vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
         <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.UselessDocComment"/>
@@ -20,16 +8,21 @@
         <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation.NonFullyQualifiedClassName"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
-        <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+        <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName.NoMatchBetweenTypeNameAndFileName"/>
         <exclude name="SlevomatCodingStandard.Commenting.DocCommentSpacing.IncorrectLinesCountBetweenDifferentAnnotationsTypes"/>
         <exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment.MultiLinePropertyComment"/>
-    </rule>
-
-    <rule ref="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces">
-        <properties>
-            <property name="linesCountAfterOpeningBrace" value="0"/>
-            <property name="linesCountBeforeClosingBrace" value="0"/>
-        </properties>
+        <exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming.SuperfluousSuffix"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses.UselessParentheses"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator.DisallowedShortTernaryOperator"/>
+        <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPreIncrementOperator"/>
+        <exclude name="SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter"/>
+        <exclude name="SlevomatCodingStandard.Classes.TraitUseSpacing.IncorrectLinesCountBeforeFirstUse"/>
+        <exclude name="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.NoEmptyLineAfterOpeningBrace"/>
+        <exclude name="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.NoEmptyLineBeforeClosingBrace"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint"/>
+        <exclude name="SlevomatCodingStandard.Classes.SuperfluousTraitNaming.SuperfluousSuffix"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator.UselessTernaryOperator"/>
+        <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma"/>
     </rule>
 
     <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">

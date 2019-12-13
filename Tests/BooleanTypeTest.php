@@ -1,14 +1,5 @@
 <?php declare(strict_types = 1);
 
-/*
- * This file is part of the Bukashk0zzzBooleanTypeBundle
- *
- * (c) Denis Golubovskiy <bukashk0zzz@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace Bukashk0zzz\BooleanTypeBundle\Tests;
 
 use Bukashk0zzz\BooleanTypeBundle\Form\Type\BooleanType;
@@ -16,9 +7,10 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\Test\TypeTestCase;
 
 /**
- * Test the BooleanTypeTest
+ * @internal
+ * @coversNothing
  */
-class BooleanTypeTest extends TypeTestCase
+final class BooleanTypeTest extends TypeTestCase
 {
     /**
      * @var int
@@ -26,7 +18,7 @@ class BooleanTypeTest extends TypeTestCase
     protected $status;
 
     /**
-     * Test type
+     * Test type.
      */
     public function testType(): void
     {
@@ -42,17 +34,12 @@ class BooleanTypeTest extends TypeTestCase
 
         $form = $this->factory->create(BooleanType::class);
         $form->submit('');
-        static::assertSame('', $form->getViewData());
+        self::assertSame('', $form->getViewData());
     }
 
-    /**
-     * @param FormInterface $form
-     *
-     * @return void
-     */
     private function assertForm(FormInterface $form): void
     {
-        static::assertTrue($form->isSynchronized());
-        static::assertSame((string) $this->status, $form->getViewData());
+        self::assertTrue($form->isSynchronized());
+        self::assertSame((string) $this->status, $form->getViewData());
     }
 }
